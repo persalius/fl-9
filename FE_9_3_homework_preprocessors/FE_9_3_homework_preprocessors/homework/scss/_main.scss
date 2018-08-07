@@ -1,0 +1,264 @@
+// ========== SETINGS ==========
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    box-sizing: border-box;
+}
+
+body {
+    background: $body_bg;
+}
+
+%clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.main-wrapper {
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+
+// ========== HEADER ==========
+header {
+    @extend %clearfix;
+    
+    .logo {
+        width: 35%;
+        margin-left: 2%;
+        float: left;
+    }
+    
+    nav {
+        width: 63%;
+        margin-top: 16.5em;
+        float: left;
+        border-top: 2px solid $color_border;
+        border-bottom: 2px solid $color_border;
+        
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: $color_link;
+            font-size: 2em;
+            padding: 1.2em 4.4em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+// ========== TOOLBAR ==========
+.toolbar {
+    @extend %clearfix;
+    margin: 3.5em 0 2.8em;
+    
+    input {
+        float: right;
+        font-size: 2em;
+        padding: 0.5em;
+        padding-left: 1.2em;
+        display: block;
+        width: 21%;
+        border: 2px solid $color_border2;
+        color: $color_border2;
+        outline: none;
+        background: none;
+        
+        &::-webkit-input-placeholder {
+          color: $color_border2;
+        }
+        &::-moz-placeholder {
+          color: $color_border2;
+        }
+        &:-ms-input-placeholder {
+          color: $color_border2;
+        }
+        &:-moz-placeholder {
+          color: $color_border2;
+        }
+    }
+}
+
+
+// ========== POST-LIST ==========
+.post-list {
+    @extend %clearfix;
+    
+    article {
+        width: 48%;
+        float: left;
+        background: $article_bg;
+        padding-top: 0.7%;
+        padding-bottom: 3.5%;
+        margin-bottom: 2.5em;
+        
+        img {
+            width: 97%;
+            margin: 0 auto 1.2em;
+        }
+        
+        &:nth-child(2n-1) {
+            margin-right: 4%;
+        }
+        
+        &>div {
+            padding: 0 2em;
+        }
+        
+        .post-description {
+            color: $color_pd;
+            font-size: 1.5em;
+            border-bottom: 2px solid $color_border;
+            padding-left: 0.3em;
+            padding-bottom: 0.9em;
+        }
+        
+        h3 {
+            color: $color_head3;
+            margin: 0.25em 0 0.2em;
+            font-size: 2.3em;
+            text-transform: uppercase;
+        }
+        
+        p {
+            font-size: 2em;
+            color: $color_pf;
+            line-height: 1.4;
+        }
+    }
+}
+
+
+// ========== ABOUT ==========
+.about {
+    margin-top: 8em;
+    
+    h1 {
+        color: $color_border2;
+        font-size: 2.7em;
+        text-align: right;
+        text-transform: uppercase;
+        margin-right: 0.4em;
+        letter-spacing: 2px;
+    }
+    
+    p {
+        color: $color_pf;
+        font-size: 2em;
+        padding: 0 0.7em;
+        line-height: 1.5;
+        margin-bottom: 1.2em;
+    }
+    
+    div:last-of-type {
+        width: 98%;
+        margin: 0 auto;
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+// ========== CONTACT-FORM ==========
+.contact-form {
+    margin-top: 7.8em;
+    
+    h1, h4 {
+        color: $color_link;
+        font-size: 2.9em;
+        text-align: right;
+    }
+    
+    h4 {
+        text-transform: uppercase;
+        font-size: 2em;
+        margin-bottom: 1.5em;
+    }
+}
+
+form {
+    @extend %clearfix;
+    
+    input {
+        width: 100%;
+        display: block;
+        color: $color_form;
+        font-size: 2em;
+        padding: 0.8em 1em;
+        margin-bottom: 1.3em;
+        border: 2px solid $color_border;
+        outline: none;
+        background: none;
+    }
+    
+    input[type=submit] {
+        width: 20%;
+        background: $color_link;
+        color: #fff;
+        border: none;
+        float: right;
+        padding: 0.6em 0;
+        margin-bottom: 0;
+    }
+    
+    textarea {
+        width: 100%;
+        min-height: 7.6em;
+        resize: vertical;
+        border: 2px solid $color_border;
+        margin-bottom: 2.7em;
+        outline: none;
+        color: $color_form;
+        font-size: 2em;
+        padding: 0.8em 1em;
+        background: none;
+    }
+}
+
+
+// ========== FOOTER ==========
+footer {
+    margin-top: 0.8em;
+    
+    span {
+        color: $color_pf;
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
