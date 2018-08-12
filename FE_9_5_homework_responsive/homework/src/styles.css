@@ -1,0 +1,306 @@
+/* ========== SETTINGS ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.container {
+	padding: 0 2%;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: #0a1223; 
+    font-family: "Open sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ========== HEADER ========== */
+.header {
+    padding: 1.5em 0;
+    margin-bottom: 5em;
+}
+
+.header .container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header__menu {
+    width: 255px;
+    float: right;
+}
+
+.header__menu ul:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header__menu li {
+    float: left;
+    margin-left: 6%;
+}
+
+.header__menu a {
+    color: #5d5d5d;
+}
+
+.header__menu li:first-child a {
+    color: #54597d;
+}
+
+.header__menu a:hover {
+    color: #54597d;
+}
+
+/* ========== h1 ========== */
+h1 {
+    font-size: 5em;
+    color: #ddd;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+h1 span {
+    font-style: italic;
+}
+
+
+/* ========== FACTS ========== */
+.fact:nth-child(odd) .fact__block-1 {
+    float: left;
+}
+
+.fact:nth-child(odd) .fact__block-2 {
+    float: right;
+}
+
+.fact:nth-child(even) .fact__block-1 {
+    float: right;
+}
+
+.fact:nth-child(even) .fact__block-2 {
+    float: left;
+}
+
+
+/*fact*/
+.fact {
+    width: 78%;
+    margin: 0 auto 9em;
+}
+
+.fact:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*.fact__block-1, .fact__block-2*/
+.fact__block-1, .fact__block-2 {
+    width: 50%;
+}
+
+/*fact__title, fact__desc*/
+.fact__title {
+    font-size: 2.5em;
+    background: linear-gradient(45deg, #ddd, #434343);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.fact__desc {
+    color: #5d5d5d;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.fact__desc p {
+    line-height: 1.5;
+}
+
+/*fact__img"*/
+.fact__img {
+    height: 12.5em;
+}
+
+.fact__img img {
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.btn-up {
+    display: none;
+    background: #5ebcff;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    right: 3em;
+    bottom: 3em;
+    box-shadow: 3px 4px 18px 0px rgba(0, 0, 0, 0.3)
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media screen and (max-width: 991px) {
+    .header__menu {
+        float: none;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 4em;
+    }
+    
+    .fact {
+	    margin-bottom: 3em;
+    }
+    
+    .fact:nth-child(odd) .fact__block-1 {
+        float: none;
+    }
+
+    .fact:nth-child(odd) .fact__block-2 {
+        float: none;
+    }
+
+    .fact:nth-child(even) .fact__block-1 {
+        float: none;
+    }
+
+    .fact:nth-child(even) .fact__block-2 {
+        float: none;
+    }
+    
+    .fact__block-1, .fact__block-2 {
+        width: 100%;
+    }
+    
+    .fact__img {
+        height: 15em;
+        margin-top: 3em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        background: #fff;
+    }
+    
+    .header {
+        padding: 0;
+    }
+    
+    .header .container {
+        padding: 0;
+    }
+    
+    .btn-up {
+        display: block;
+    }
+    
+    .header__menu {
+        width: 100%;
+    }
+
+    .header__menu li {
+        float: none;
+        margin-left: 0;
+    }
+
+    .header__menu a {
+        display: block;
+        color: #5d5d5d;
+        border-bottom: 1px solid #ddd;
+        padding: 1em 0;
+        padding-left: 2%;
+        color: #5d5d5d;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .header__menu li:first-child a {
+        color: #54597a;
+    }
+    
+    h1 {
+        color: #000;
+        font-size: 3em;
+    }
+    
+    .fact {
+        width: 88%;
+    }
+    
+    .fact__title {
+        color: #484747;
+        font-size: 2em;
+        -webkit-text-fill-color: #484747;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+    
+    .fact__img {
+        height: 13em;
+    }
+    
+    .fact__img img {
+        width: 100%;
+    }
+    
+    .fact__desc {
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
