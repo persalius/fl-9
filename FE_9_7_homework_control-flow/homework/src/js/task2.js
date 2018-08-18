@@ -29,7 +29,6 @@ function playWithMe() {
     
     let userTry = 0; // попытли пользователя
     let number = randomNumber(min * gameNumber, max * gameNumber);
-    console.log(number);
     
     while (userNumber !== number && userTry < 3) {
         userTry++;
