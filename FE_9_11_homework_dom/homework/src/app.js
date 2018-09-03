@@ -148,14 +148,3 @@ function addDnDHandlers(elem) {
   elem.addEventListener('drop', handleDrop, false);
   elem.addEventListener('dragend', handleEnd, false);
 }
-
-
-
-
-
-
-
-
-
-
-
