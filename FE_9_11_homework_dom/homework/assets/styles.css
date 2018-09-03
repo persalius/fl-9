@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: roboto, sans-serif;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+#root {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.header {
+	text-align: center;
+	font-weight: 400;
+	margin: 1em 0;
+}
+
+.root__form {
+	border-bottom: 2px solid #000;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+.root__form:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.input {
+	width: 90%;
+	height: 24px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.addTask {
+	width: 24px;
+	height: 24px;
+	float: right;
+	border: none;
+	box-sizing: border-box;
+	text-align: center;
+	background: #000;
+	border-radius: 4px;
+	position: relative;
+}
+
+.add-btn {
+	color: #fff;
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 50%;
+	margin-left: -50%;
+}
+
+.material-icons {
+	cursor: pointer;
+}
+
+.list-item {
+    position: relative;
+    margin-bottom: 1em;
+    padding-left: 30px;
+    cursor: move;
+}
+
+.delete {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-55%);
+}
+
+.label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.check {
+    display: none;
+}
+
+.done {
+    font-size: 16px;
+}
+
+.logo {
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+}
+
+img {
+    max-width: 100%;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
